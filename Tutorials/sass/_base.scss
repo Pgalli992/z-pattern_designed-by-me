@@ -1,0 +1,64 @@
+// COLORS
+$color-primary: #32c122;
+$color-grey-dark: #555;
+$color-grey-light: #ddd;
+
+// RESPONSIVE BRAKE POINTS
+$bp-largest: 62.5em; // 1000px
+$bp-large: 50em; // 800px
+$bp-small: 37.5em; // 600px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px
+  overflow-x: hidden;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  width: 100vw;
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: $color-grey-dark;
+  overflow-x: hidden;
+}
+
+.heading__secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 4.8rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 3.4rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+.heading__tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-bottom: 1.8rem;
+    text-align: center;
+  }
+}
